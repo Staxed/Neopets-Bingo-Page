@@ -1,49 +1,46 @@
 <style>
 body {
-	background: #eee;
+	background: #e7e6ff url("https://i.imgur.com/c7NlboD.png") no-repeat left top fixed;
 	margin-top: -17px;
 }
-.insideheader {
-	background: url("http://i.imgur.com/sbeRN5g.jpg") 5% 5%;
-	height: 100px;
-	width: 820px;
+.header {
+	width: 800px;
 	text-align: center;
-	padding-top: 10px;
 	padding-bottom: 10px;
-	color: #fff !important;
+	color: #000 !important;
 }
-.belowheader {
-	background: #2b91cc;
-	width: 820px;
+.topheader {
+	width: 800px;
 	top: 0px;
 	left: 0px;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.belowheader td {
-	color: #fff !important;
+.topheader td {
 	text-transform: uppercase;
-	font: 6pt tahoma !important;
+	font: 8pt Garamond !important;
+	color: #BC9400 !important;
 	letter-spacing: 1px;
 }
 .content {
-	width: 820px;
+	width: 800px;
 	text-align: left;
-	background: #fff;
 }
 p {
-	width: 600px;
+	width: 650px;
 	text-align: justify;
-	margin: 30px auto;
+	margin: 15px 15px;
+	padding: 15px 15px;
+	background: url("https://i.imgur.com/NCziddw.png");
 }
 a {
 	text-align: center;
 	text-decoration: underline;
-	color: #1471a7;
+	color: #950000;
 }
 a:hover {
-	text-decoration: line-through;
+	font-weight: 900;
 }
 body, font, div {
 	color: #000;
@@ -51,76 +48,61 @@ body, font, div {
 	line-height: 20px;
 	font-family: tahoma;
 }
-.sf {
-	display: none;
-}
 h1 {
-	font: 15pt verdana;
+	font: 20pt verdana;
 	letter-spacing: 1px;
 	font-weight: bold;
 	text-align: center;
 	margin-top: 40px;
 	padding: 5px;
-	color: #FFF;
+	color: #B30F88;
 	text-transform: uppercase;
 }
 h2 {
-	font: 13pt verdana;
-	letter-spacing: 1px;
-	font-weight: bold;
-	text-align: center;
-	padding: 5px;
-	color: #1471a7;
-	text-transform: uppercase;
-}
-h3 {
 	font: 15pt verdana;
 	letter-spacing: 1px;
 	font-weight: bold;
 	text-align: center;
 	padding: 5px;
-	color: #1471a7;
+	color: #B30F88;
 	text-transform: uppercase;
 }
-#credit {
-	text-align: center;
-	vertical-align: top;
-	background: #2b91cc;
-	width: 820px;
-	text-transform: uppercase;
-	font: 6pt tahoma !important;
+h3 {
+	font: 13pt verdana;
 	letter-spacing: 1px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: #fff !important;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+	color: #B30F88;
+	text-transform: uppercase;
 }
-#smallpic img {
-	width: 190px;
-	margin-left: 6px;
-	border: 2px solid #fff;
+.footer {
+	text-align: center;
+	width: 800px;
+	text-transform: uppercase;
+	font: 8pt Garamond !important;
+	color: #BC9400 !important;
 }
-#smallpic img:hover {
-	border: 2px solid #ddd;
+.need {
+	width: 80px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	border: 1px solid #ccc;
+	background: #fff;
 }
-.uc {
-	width: 98px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-	border: 2px solid #f1f1f1;
+.had {
+	width: 80px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	border: 1px solid #63c24f;
+	background: #91ee7e;
 }
-.bingo {
-	background-image: url("http://i.imgur.com/DNLl1bH.gif");
-	width: 98px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-	border: 2px solid #f1f1f1;
-}
-.bingo2 {
-	background-image: url("http://i.imgur.com/FGrUXi7.gif");
-	width: 98px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-	border: 2px solid #f1f1f1;
+.have {
+	width: 80px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	border: 1px solid #8c2bcc;
+	background: #b060e6;
 }
 .img {
 	width: 100%;
@@ -131,10 +113,14 @@ h3 {
 	background-position: center !important;
 	background-repeat: no-repeat !important;
 }
-.pet_container {
+.petcontainer {
 	width: 15%;
 	display: inline-block;
-	margin-top: 10px;
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+.petbg {
+	background: #fff;
 }
 #fade:hover {
 	background: url("http://i.imgur.com/DGoL11n.png");
@@ -145,147 +131,733 @@ h3 {
 	height: 100%;
 	padding-top: 10px;
 }
-</style><br><center>
-<div class="content">
-<div class="header">
-<div class="insideheader">
-
-<h1>Daniel's Pet Bingo</h1>
-
-
-</div>
-</div>
-<div class="belowheader">
+</style>
+<br>
 <center>
-
-<table width="800"><tr><td><center><b>Last Updated</b> March 8, 2022</center></td>
-       <td><center><b>My lookup</b> <a href="/userlookup.phtml?user=srhale">srhale</a></center></td>
+<div class="content">
+<div class="topheader">
+<center>
+<table width="800"><tr><td align="left"><b>Last Updated</b> March 19, 2022</td>
+       <td align="right"><b>My lookup</b> <a href="/userlookup.phtml?user=srhale">srhale</a></td>
 </tr></table></center>
 </div>
-<p></p><center>
+<div class="header">
+<h1>Daniel's Converted Pet Bingo</h1>
+</div>
+<center>
 
-<p style="text-align: center;">Welcome to my UC Bingo Page.  On this page you will find all the UC pets that I have owned.  <br>The goal, of course, is to get them all...which means I'll never finish.<br><br>I mostly just got into UC trading in order to get a WN UC MSP...but now that I can easily do that with a T8 that a friend gifted me, I decided I would use the opportunity to set myself a goal...and now here I am, playing UC Bingo.  My Bingo journey started on 4 Aug 2021.</p>
+<p style="text-align: center;">Welcome to my Pet Bingo Page.  On this page you will find all the pets that I have owned.  <br>The goal, of course, is to get them all...which means I'll never finish.<br><br>My main goal in Neopets is to build a 30 member strong MSP Army, but while I'm working my way towards that I figured this might be a fun way to pass the time.  I've been playing Neo for a long time, and haven't tracked all my pets since the beginning...but my Bingo tracking journey started on 19 Mar 2022.  And yes, I added all the pets that I've had in the past (that I could remember).</p>
 
+<!-- Begin Pet Box - This box can fit up to 6 pets -->
 <div id="box" style="text-align: center;">
-<h3>My Current UC Pets</h3>
-
-<div class="pet_container">
-<a href="http://www.neopets.com/petlookup.phtml?pet=keliza832514"><div class="img" style="background: url('http://pets.neopets.com/cpn/keliza832514/1/4.png');">
-<div id="fade"></div></div>
+<h3>My Current  Pets</h3>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Sandstorm_Dragon"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Sandstorm_Dragon/1/4.png');">
+<div id="fade"></div></div></div>
 </a></div>
-
-<div class="pet_container">
-<a href="http://www.neopets.com/petlookup.phtml?pet=Pacy22"><div class="img" style="background: url('http://pets.neopets.com/cpn/Pacy22/1/4.png');">
-<div id="fade"></div></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Gunny"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Gunny/1/4.png');">
+<div id="fade"></div></div></div>
 </a></div>
-
-<div class="pet_container">
-<a href="http://www.neopets.com/petlookup.phtml?pet=taming528"><div class="img" style="background: url('http://pets.neopets.com/cpn/taming528/1/4.png');">
-<div id="fade"></div></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Doomsoul"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Doomsoul/1/4.png');">
+<div id="fade"></div></div></div>
 </a></div>
-
-<div class="pet_container">
-<a href="http://www.neopets.com/petlookup.phtml?pet=Aliza36"><div class="img" style="background: url('http://pets.neopets.com/cpn/Aliza36/1/4.png');">
-<div id="fade"></div></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Scrimageour"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Scrimageour/1/4.png');">
+<div id="fade"></div></div></div>
 </a></div>
-
-<div class="pet_container">
-<a href="http://www.neopets.com/petlookup.phtml?pet=Speeto_Evolution"><div class="img" style="background: url('http://pets.neopets.com/cpn/Speeto_Evolution/1/4.png');">
-<div id="fade"></div></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Simian"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Simian/1/4.png');">
+<div id="fade"></div></div></div>
 </a></div>
-
-<div class="pet_container">
-<a href="http://www.neopets.com/petlookup.phtml?pet=WhisperWrath"><div class="img" style="background: url('http://pets.neopets.com/cpn/WhisperWrath/1/4.png');">
-<div id="fade"></div></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Poglei"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Poglei/1/4.png');">
+<div id="fade"></div></div></div>
 </a></div>
 </div>
-<br><br><br><h3>Tier 1</h3>
+<!-- End Pet Box -->
+<!-- Begin Pet Box - This box can fit up to 6 pets -->
+<div id="box" style="text-align: center;">
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=DoppeIganger"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/DoppeIganger/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Rejii"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Rejii/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Sebhek"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Sebhek/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Anolo"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Anolo/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Zeaze"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Zeaze/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Cravyn"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Cravyn/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+</div>
+<!-- End Pet Box -->
+<!-- Begin Pet Box - This box can fit up to 6 pets -->
+<div id="box" style="text-align: center;">
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Aroli"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Aroli/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Adiim"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Adiim/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Hainnah"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Hainnah/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Rubeaus"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Rubeaus/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Kroqe"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Kroqe/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Zwinda"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Zwinda/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+</div>
+<!-- End Pet Box -->
+<!-- Begin Pet Box - This box can fit up to 6 pets -->
+<div id="box" style="text-align: center;">
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Contessia"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Contessia/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Riptazar"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Riptazar/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Ridicalus"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Ridicalus/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Obarti"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Obarti/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Machoc"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Machoc/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Nollon"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Nollon/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+</div>
+<!-- End Pet Box -->
+<!-- Begin Pet Box - This box can fit up to 6 pets -->
+<div id="box" style="text-align: center;">
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Jotpu"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Jotpu/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Jopto"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Jopto/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Keseo"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Keseo/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Eatherya"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Eatherya/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+</div>
+<!-- End Pet Box -->
+<!-- Begin Pet Box - This box can fit up to 6 pets -->
+<div id="box" style="text-align: center;">
+<h3>My Current  Labbies</h3>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Myndflayer"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Myndflayer/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Roilsome"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Roilsome/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Lloss"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Lloss/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Dogela"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Dogela/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+<div class="petcontainer">
+<a href="http://www.neopets.com/petlookup.phtml?pet=Ziufa"><div class="petbg"><div class="img" style="background: url('http://pets.neopets.com/cpn/Ziufa/1/4.png');">
+<div id="fade"></div></div></div>
+</a></div>
+</div>
+<!-- End Pet Box -->
+
+<br>
+<br>
+
+<br>
+<h3>Acara</h3>
 <center>
-<img src="http://pets.neopets.com/cp/v5ogzqfc/1/4.png" alt="Darigan Mynci" class="uc"><img src="http://pets.neopets.com/cp/2cbwbs53/1/4.png" alt="Darigan Shoyru " class="uc"><img src="http://pets.neopets.com/cp/7lcntqhq/1/4.png" alt="Desert Poogle" class="uc"><img src="http://pets.neopets.com/cp/ctqw747h/1/4.png" alt="Halloween Lupe" class="uc"><img src="http://pets.neopets.com/cp/fjzrt5dn/1/4.png" alt="Maraquan Scorchio" class="uc"><img src="http://pets.neopets.com/cp/vkf5wxcf/1/4.png" alt="Mutant Buzz" class="uc"><img src="http://pets.neopets.com/cp/4nsxxm2t/2/2.png" alt="Mutant Jetsam" class="bingo"><img src="http://pets.neopets.com/cp/c766nnj7/1/4.png" alt="Mutant Lupe" class="uc"><img src="http://pets.neopets.com/cp/55ov7r9f/3/2.png" alt="Mutant Meerca" class="uc"><img src="http://pets.neopets.com/cp/228qrcrx/1/4.png" alt="Mutant Scorchio" class="uc"><img src="http://pets.neopets.com/cp/t6g7f2kq/2/2.png" alt="Mutant Usul" class="uc"><img src="http://pets.neopets.com/cp/j45x3v23/1/2.png" alt="Sponge Grundo" class="uc"><img src="http://pets.neopets.com/cp/db4o3z2n/1/4.png" alt="Tyrannian Nimmo" class="uc"><img src="http://pets.neopets.com/cp/62f7v3zq/1/4.png" alt="Tyrannian Quiggle" class="uc"></center>
+<img src="http://pets.neopets.com/cp/8lzcv5jz/1/4.png" alt="8-Bit Acara" class="need">
+<img src="http://pets.neopets.com/cp/sk5z9r4n/1/4.png" alt="Baby Acara" class="have">
+<img src="http://pets.neopets.com/cp/6twvrm4w/1/4.png" alt="Biscuit Acara" class="had">
+<img src="http://pets.neopets.com/cp/mnbztxxn/1/4.png" alt="Blue Acara" class="need">
+<img src="http://pets.neopets.com/cp/lr9rdb3z/1/4.png" alt="Brown Acara" class="need">
+<img src="http://pets.neopets.com/cp/jk2382nx/1/4.png" alt="Camouflage Acara" class="need">
+<img src="http://pets.neopets.com/cp/6wjmdwcl/1/4.png" alt="Candy Acara" class="need">
+<img src="http://pets.neopets.com/cp/b52qs5xw/1/4.png" alt="Checkered Acara" class="need">
+<img src="http://pets.neopets.com/cp/7c8o9jqg/1/4.png" alt="Chocolate Acara" class="need">
+<img src="http://pets.neopets.com/cp/cndwrskh/1/4.png" alt="Christmas Acara" class="need">
+<img src="http://pets.neopets.com/cp/mc25r7q7/1/4.png" alt="Cloud Acara" class="need">
+<img src="http://pets.neopets.com/cp/3r9s5w53/1/4.png" alt="Darigan Acara" class="need">
+<img src="http://pets.neopets.com/cp/8fk2d4wq/1/4.png" alt="Desert Acara" class="need">
+<img src="http://pets.neopets.com/cp/dhqsq82x/1/4.png" alt="Dimensional Acara" class="need">
+<img src="http://pets.neopets.com/cp/xxzv34xj/1/4.png" alt="Disco Acara" class="need">
+<img src="http://pets.neopets.com/cp/ow54tkx2/1/4.png" alt="Elderlyboy Acara" class="need">
+<img src="http://pets.neopets.com/cp/5ohnvj99/1/4.png" alt="Elderlygirl Acara" class="need">
+<img src="http://pets.neopets.com/cp/kk2ho3dg/1/4.png" alt="Electric Acara" class="need">
+<img src="http://pets.neopets.com/cp/84ok3wo7/1/4.png" alt="Eventide Acara" class="need">
+<img src="http://pets.neopets.com/cp/24jh3dfh/1/4.png" alt="Faerie Acara" class="need">
+<img src="http://pets.neopets.com/cp/fw75h78s/1/4.png" alt="Fire Acara" class="need">
+<img src="http://pets.neopets.com/cp/4mx7owh7/1/4.png" alt="Ghost Acara" class="need">
+<img src="http://pets.neopets.com/cp/gc26v7hc/1/4.png" alt="Glowing Acara" class="need">
+<img src="http://pets.neopets.com/cp/zzkorzkc/1/4.png" alt="Gold Acara" class="need">
+<img src="http://pets.neopets.com/cp/obxdjm88/1/4.png" alt="Green Acara" class="need">
+<img src="http://pets.neopets.com/cp/6sm52kmm/1/4.png" alt="Grey Acara" class="need">
+<img src="http://pets.neopets.com/cp/7mjl8dwc/1/4.png" alt="Halloween Acara" class="need">
+<img src="http://pets.neopets.com/cp/o73bzg8k/1/4.png" alt="Ice Acara" class="need">
+<img src="http://pets.neopets.com/cp/ht8ww7h5/1/4.png" alt="Invisible Acara" class="need">
+<img src="http://pets.neopets.com/cp/rmxvkmj7/1/4.png" alt="Island Acara" class="need">
+<img src="http://pets.neopets.com/cp/9j7cwxb5/1/4.png" alt="Jelly Acara" class="need">
+<img src="http://pets.neopets.com/cp/lgoq3jhm/1/4.png" alt="Magma Acara" class="need">
+<img src="http://pets.neopets.com/cp/oltwt3h7/1/4.png" alt="Maractite Acara" class="need">
+<img src="http://pets.neopets.com/cp/ntvxx7xc/1/4.png" alt="Maraquan Acara" class="need">
+<img src="http://pets.neopets.com/cp/zmofvhdx/1/4.png" alt="Mutant Acara" class="need">
+<img src="http://pets.neopets.com/cp/bgxjc27k/1/4.png" alt="Oil Paint Acara" class="need">
+<img src="http://pets.neopets.com/cp/wk4wxt2o/1/4.png" alt="Orange Acara" class="need">
+<img src="http://pets.neopets.com/cp/dkoxwktc/1/4.png" alt="Pastel Acara" class="need">
+<img src="http://pets.neopets.com/cp/q4mgw4sb/1/4.png" alt="Pink Acara" class="need">
+<img src="http://pets.neopets.com/cp/j5r345cj/1/4.png" alt="Pirate Acara" class="need">
+<img src="http://pets.neopets.com/cp/6kgwgdrc/1/4.png" alt="Plushie Acara" class="need">
+<img src="http://pets.neopets.com/cp/gbwfsxld/1/4.png" alt="Purple Acara" class="need">
+<img src="http://pets.neopets.com/cp/rjclrj7s/1/4.png" alt="Rainbow Acara" class="need">
+<img src="http://pets.neopets.com/cp/7njwqlq8/1/4.png" alt="Red Acara" class="need">
+<img src="http://pets.neopets.com/cp/5rvov76q/1/4.png" alt="Robot Acara" class="need">
+<img src="http://pets.neopets.com/cp/334dbsjn/1/4.png" alt="Royalboy Acara" class="need">
+<img src="http://pets.neopets.com/cp/no57j448/1/4.png" alt="Royalgirl Acara" class="need">
+<img src="http://pets.neopets.com/cp/2s9cgmz7/1/4.png" alt="Shadow Acara" class="need">
+<img src="http://pets.neopets.com/cp/z89komoq/1/4.png" alt="Silver Acara" class="need">
+<img src="http://pets.neopets.com/cp/2ddk4jhl/1/4.png" alt="Sketch Acara" class="need">
+<img src="http://pets.neopets.com/cp/t5qo8o4c/1/4.png" alt="Skunk Acara" class="need">
+<img src="http://pets.neopets.com/cp/b5zsc547/1/4.png" alt="Snot Acara" class="need">
+<img src="http://pets.neopets.com/cp/hf7lnc9k/1/4.png" alt="Snow Acara" class="need">
+<img src="http://pets.neopets.com/cp/gzm3n3tn/1/4.png" alt="Speckled Acara" class="need">
+<img src="http://pets.neopets.com/cp/w5hvvgc7/1/4.png" alt="Split Acara" class="need">
+<img src="http://pets.neopets.com/cp/lbl8f9d5/1/4.png" alt="Sponge Acara" class="need">
+<img src="http://pets.neopets.com/cp/v3bsvwxm/1/4.png" alt="Spotted Acara" class="need">
+<img src="http://pets.neopets.com/cp/ovxrnlwl/1/4.png" alt="Starry Acara" class="need">
+<img src="http://pets.neopets.com/cp/b2otqh75/1/4.png" alt="Stealthy Acara" class="need">
+<img src="http://pets.neopets.com/cp/2lowlf4w/1/4.png" alt="Steampunk Acara" class="need">
+<img src="http://pets.neopets.com/cp/99bmlfof/1/4.png" alt="Strawberry Acara" class="need">
+<img src="http://pets.neopets.com/cp/mfwl8rzz/1/4.png" alt="Striped Acara" class="need">
+<img src="http://pets.neopets.com/cp/cftwq9s3/1/4.png" alt="Swamp Gas Acara" class="need">
+<img src="http://pets.neopets.com/cp/mfs4w35n/1/4.png" alt="Transparent Acara" class="need">
+<img src="http://pets.neopets.com/cp/wdgvwkvg/1/4.png" alt="Tyrannian Acara" class="need">
+<img src="http://pets.neopets.com/cp/gg95jnxf/1/4.png" alt="Water Acara" class="need">
+<img src="http://pets.neopets.com/cp/lxjrsml8/1/4.png" alt="White Acara" class="need">
+<img src="http://pets.neopets.com/cp/vbowsrv8/1/4.png" alt="Woodland Acara" class="need">
+<img src="http://pets.neopets.com/cp/sw3bqm8g/1/4.png" alt="Wraith Acara" class="need">
+<img src="http://pets.neopets.com/cp/o3wj6s77/1/4.png" alt="Yellow Acara" class="need">
+<img src="http://pets.neopets.com/cp/7jzdb8ds/1/4.png" alt="Zombie Acara" class="need">
+</center>
 
-<p>Darigan Mynci ♛ Darigan Shoyru ♛ Desert Poogle ♛ Halloween Lupe ♛ Maraquan Scorchio ♛ Mutant Buzz ♛ <i>Mutant Jetsam</i> ♛ Mutant Lupe ♛ Mutant Meerca ♛ Mutant Scorchio ♛ Mutant Usul ♛ Sponge Grundo ♛ Tyrannian Quiggle ♛ Tyrannian Nimmo</p>
-
-
-
-<br><h3>Tier 2</h3>
-
-
+<br>
+<h3>Aisha</h3>
 <center>
-<img src="http://pets.neopets.com/cp/xorkzq7v/1/4.png" alt="Baby Eyrie" class="uc"><img src="http://pets.neopets.com/cp/d9ffjxqh/1/4.png" alt="Baby Kougra" class="bingo"><img src="http://pets.neopets.com/cp/5vjjl9mg/1/4.png" alt="Coconut Jubjub" class="uc"><img src="http://pets.neopets.com/cp/5w8jqcx6/1/4.png" alt="Darigan Grundo" class="uc"><img src="http://pets.neopets.com/cp/2dhbctxg/1/4.png" alt="Darigan Jetsam" class="bingo"><img src="http://pets.neopets.com/cp/9fbh57vl/1/4.png" alt="Darigan Lenny " class="uc"><img src="http://pets.neopets.com/cp/sllm8l6v/1/4.png" alt="Darigan Meerca" class="uc"><img src="http://pets.neopets.com/cp/frmlqj3d/1/4.png" alt="Darigan Moehog" class="uc"><img src="http://pets.neopets.com/cp/8wshr4js/1/4.png" alt="Darigan Tonu" class="uc"><img src="http://pets.neopets.com/cp/tmrdk6n6/1/4.png" alt="Darigan Uni" class="uc"><img src="http://pets.neopets.com/cp/lohlcqsh/1/4.png" alt="Desert Kau" class="uc"><img src="http://pets.neopets.com/cp/js94sm3s/1/4.png" alt="Faerie Kau" class="uc"><img src="http://pets.neopets.com/cp/8rgsbfso/1/4.png" alt="Grey Koi" class="uc"><img src="http://pets.neopets.com/cp/4vlt9s7k/1/4.png" alt="Halloween Wocky" class="uc"><img src="http://pets.neopets.com/cp/hx449k2x/1/4.png" alt="Halloween Zafara" class="uc"><img src="http://pets.neopets.com/cp/ovl7owsf/1/4.png" alt="Maraquan Chomby" class="uc"><img src="http://pets.neopets.com/cp/cmht3fjc/1/4.png" alt="Maraquan Grarrl" class="uc"><img src="http://pets.neopets.com/cp/38vnozkq/1/4.png" alt="Robot Blumaroo" class="uc"><img src="http://pets.neopets.com/cp/jmd4zhjx/1/4.png" alt="Robot Gnorbu" class="uc"><img src="http://pets.neopets.com/cp/vj3rmz2h/1/4.png" alt="Robot Jetsam" class="uc"><img src="http://pets.neopets.com/cp/d87f33lc/1/4.png" alt="Sponge Moehog" class="bingo"><img src="http://pets.neopets.com/cp/tsswf7ds/1/4.png" alt="Tyrannian Kau" class="uc"><img src="http://pets.neopets.com/cp/gsm77r94/1/4.png" alt="Tyrannian Lenny" class="uc"><img src="http://pets.neopets.com/cp/cqlnnonz/1/4.png" alt="Tyrannian Mynci" class="uc"><img src="http://pets.neopets.com/cp/9zrklrkw/1/4.png" alt="Tyrannian Techo" class="uc"></center>
+<img src="http://pets.neopets.com/cp/wdbmqj6j/1/4.png" alt="8-Bit Aisha" class="need">
+<img src="http://pets.neopets.com/cp/w5zb4rd8/1/4.png" alt="Alien Aisha" class="need">
+<img src="http://pets.neopets.com/cp/bon8m2o4/1/4.png" alt="Baby Aisha" class="need">
+<img src="http://pets.neopets.com/cp/q5bc7fh9/1/4.png" alt="Biscuit Aisha" class="need">
+<img src="http://pets.neopets.com/cp/n9ozx4z5/1/4.png" alt="Blue Aisha" class="need">
+<img src="http://pets.neopets.com/cp/mtbshqg2/1/4.png" alt="Brown Aisha" class="need">
+<img src="http://pets.neopets.com/cp/cxgvo5gq/1/4.png" alt="Camouflage Aisha" class="need">
+<img src="http://pets.neopets.com/cp/z5d4fjo9/1/4.png" alt="Candy Aisha" class="need">
+<img src="http://pets.neopets.com/cp/mbxh7933/1/4.png" alt="Checkered Aisha" class="need">
+<img src="http://pets.neopets.com/cp/t7qofm3v/1/4.png" alt="Chocolate Aisha" class="need">
+<img src="http://pets.neopets.com/cp/xon54dkj/1/4.png" alt="Christmas Aisha" class="need">
+<img src="http://pets.neopets.com/cp/g4b65t86/1/4.png" alt="Clay Aisha" class="need">
+<img src="http://pets.neopets.com/cp/l7l42v2k/1/4.png" alt="Cloud Aisha" class="need">
+<img src="http://pets.neopets.com/cp/4bn2z33x/1/4.png" alt="Custard Aisha" class="need">
+<img src="http://pets.neopets.com/cp/v8tr9kq2/1/4.png" alt="Darigan Aisha" class="need">
+<img src="http://pets.neopets.com/cp/d4vlbh8m/1/4.png" alt="Desert Aisha" class="need">
+<img src="http://pets.neopets.com/cp/d7wzrl9h/1/4.png" alt="Dimensional Aisha" class="need">
+<img src="http://pets.neopets.com/cp/mbncmc4m/1/4.png" alt="Disco Aisha" class="need">
+<img src="http://pets.neopets.com/cp/ch29krn5/1/4.png" alt="Elderlyboy Aisha" class="need">
+<img src="http://pets.neopets.com/cp/s2jtc4hm/1/4.png" alt="Elderlygirl Aisha" class="need">
+<img src="http://pets.neopets.com/cp/n5hxsrqd/1/4.png" alt="Electric Aisha" class="need">
+<img src="http://pets.neopets.com/cp/m8okn6t5/1/4.png" alt="Eventide Aisha" class="need">
+<img src="http://pets.neopets.com/cp/lgwwxw39/1/4.png" alt="Faerie Aisha" class="need">
+<img src="http://pets.neopets.com/cp/xrq3g7rb/1/4.png" alt="Fire Aisha" class="need">
+<img src="http://pets.neopets.com/cp/fojmqcrn/1/4.png" alt="Ghost Aisha" class="need">
+<img src="http://pets.neopets.com/cp/72trtg4q/1/4.png" alt="Glowing Aisha" class="need">
+<img src="http://pets.neopets.com/cp/74wnm3q6/1/4.png" alt="Gold Aisha" class="need">
+<img src="http://pets.neopets.com/cp/vw3j5rnt/1/4.png" alt="Green Aisha" class="need">
+<img src="http://pets.neopets.com/cp/ggb7w98s/1/4.png" alt="Grey Aisha" class="need">
+<img src="http://pets.neopets.com/cp/ztwk9qk5/1/4.png" alt="Halloween Aisha" class="need">
+<img src="http://pets.neopets.com/cp/8mlzv73b/1/4.png" alt="Ice Aisha" class="need">
+<img src="http://pets.neopets.com/cp/2lbkjtrf/1/4.png" alt="Invisible Aisha" class="need">
+<img src="http://pets.neopets.com/cp/bkqnjzq6/1/4.png" alt="Island Aisha" class="need">
+<img src="http://pets.neopets.com/cp/j779rt3v/1/4.png" alt="Jelly Aisha" class="need">
+<img src="http://pets.neopets.com/cp/lklz5dvw/1/4.png" alt="Magma Aisha" class="need">
+<img src="http://pets.neopets.com/cp/mtw8d8h4/1/4.png" alt="Maractite Aisha" class="need">
+<img src="http://pets.neopets.com/cp/37wgjb6s/1/4.png" alt="Maraquan Aisha" class="need">
+<img src="http://pets.neopets.com/cp/qz3n85nf/1/4.png" alt="Marble Aisha" class="need">
+<img src="http://pets.neopets.com/cp/c4wrb4vd/1/4.png" alt="Mutant Aisha" class="need">
+<img src="http://pets.neopets.com/cp/4w43ttlt/1/4.png" alt="Orange Aisha" class="need">
+<img src="http://pets.neopets.com/cp/kzqv58k7/1/4.png" alt="Pastel Aisha" class="need">
+<img src="http://pets.neopets.com/cp/7obh8xcc/1/4.png" alt="Pink Aisha" class="need">
+<img src="http://pets.neopets.com/cp/cjqj86x2/1/4.png" alt="Pirate Aisha" class="need">
+<img src="http://pets.neopets.com/cp/4s5zwdmc/1/4.png" alt="Plushie Aisha" class="need">
+<img src="http://pets.neopets.com/cp/ch958jhg/1/4.png" alt="Polka Dot Aisha" class="need">
+<img src="http://pets.neopets.com/cp/m39qgg5d/1/4.png" alt="Purple Aisha" class="need">
+<img src="http://pets.neopets.com/cp/6wxrt339/1/4.png" alt="Rainbow Aisha" class="need">
+<img src="http://pets.neopets.com/cp/r27dkxdc/1/4.png" alt="Red Aisha" class="need">
+<img src="http://pets.neopets.com/cp/fs2h8zrd/1/4.png" alt="Relic Aisha" class="need">
+<img src="http://pets.neopets.com/cp/9zfrzklx/1/4.png" alt="Robot Aisha" class="need">
+<img src="http://pets.neopets.com/cp/j3h8hq94/1/4.png" alt="Royalboy Aisha" class="need">
+<img src="http://pets.neopets.com/cp/4zr7fx57/1/4.png" alt="Royalgirl Aisha" class="need">
+<img src="http://pets.neopets.com/cp/hgl7bfvo/1/4.png" alt="Shadow Aisha" class="need">
+<img src="http://pets.neopets.com/cp/mn8xv939/1/4.png" alt="Silver Aisha" class="need">
+<img src="http://pets.neopets.com/cp/gog93d2k/1/4.png" alt="Sketch Aisha" class="need">
+<img src="http://pets.neopets.com/cp/5sl7tnq9/1/4.png" alt="Skunk Aisha" class="need">
+<img src="http://pets.neopets.com/cp/x8gbosrg/1/4.png" alt="Snot Aisha" class="need">
+<img src="http://pets.neopets.com/cp/zf8j977w/1/4.png" alt="Snow Aisha" class="need">
+<img src="http://pets.neopets.com/cp/xrwhj9v8/1/4.png" alt="Speckled Aisha" class="need">
+<img src="http://pets.neopets.com/cp/qdr9m65h/1/4.png" alt="Split Aisha" class="need">
+<img src="http://pets.neopets.com/cp/gzqrs99m/1/4.png" alt="Sponge Aisha" class="need">
+<img src="http://pets.neopets.com/cp/s8ktr6ww/1/4.png" alt="Spotted Aisha" class="need">
+<img src="http://pets.neopets.com/cp/o3jvr967/1/4.png" alt="Starry Aisha" class="need">
+<img src="http://pets.neopets.com/cp/x89trcgx/1/4.png" alt="Stealthy Aisha" class="need">
+<img src="http://pets.neopets.com/cp/6dlf7lxo/1/4.png" alt="Steampunk Aisha" class="need">
+<img src="http://pets.neopets.com/cp/2gcmf37c/1/4.png" alt="Strawberry Aisha" class="need">
+<img src="http://pets.neopets.com/cp/3fd7qqc4/1/4.png" alt="Striped Aisha" class="need">
+<img src="http://pets.neopets.com/cp/kffgff3t/1/4.png" alt="Swamp Gas Aisha" class="need">
+<img src="http://pets.neopets.com/cp/dzw36gl3/1/4.png" alt="Toy Aisha" class="need">
+<img src="http://pets.neopets.com/cp/och53qkw/1/4.png" alt="Transparent Aisha" class="need">
+<img src="http://pets.neopets.com/cp/gbrovvtf/1/4.png" alt="Tyrannian Aisha" class="need">
+<img src="http://pets.neopets.com/cp/bdhrx4r3/1/4.png" alt="Water Aisha" class="need">
+<img src="http://pets.neopets.com/cp/8r8kxh8k/1/4.png" alt="White Aisha" class="need">
+<img src="http://pets.neopets.com/cp/rrrvgts6/1/4.png" alt="Woodland Aisha" class="need">
+<img src="http://pets.neopets.com/cp/cd6c5zl9/1/4.png" alt="Wraith Aisha" class="need">
+<img src="http://pets.neopets.com/cp/t4osnjxq/1/4.png" alt="Yellow Aisha" class="need">
+<img src="http://pets.neopets.com/cp/o4wlcgvn/1/4.png" alt="Zombie Aisha" class="need">
+</center> 
 
-<p>Baby Eyrie ♛ <i>Baby Kougra</i> ♛ Coconut Jubjub ♛ Darigan Grundo ♛ <i>Darigan Jetsam</i> ♛ Darigan Lenny ♛ Darigan Meerca ♛ Darigan Moehog ♛ Darigan Tonu ♛ Darigan Uni ♛ Desert Kau ♛ Faerie Kau ♛ Grey Koi ♛ Halloween Wocky ♛ Halloween Zafara ♛ Maraquan Chomby ♛ Maraquan Grarrl ♛ Robot Blumaroo ♛ Robot Gnorbu ♛ Robot Jetsam ♛ <i>Sponge Moehog</i> ♛ Tyrannian Kau ♛ Tyrannian Lenny ♛ Tyrannian Mynci ♛ Tyrannian Techo</p>
-
-
-<br><h3>Tier 3</h3>
-
+<br>
+<h3>Blumaroo</h3>
 <center>
-<img src="http://pets.neopets.com/cp/b3ff3765/1/4.png" alt="Baby Skeith" class="uc"><img src="http://pets.neopets.com/cp/2z3f55m6/1/4.png" alt="Darigan Acara" class="bingo"><img src="http://pets.neopets.com/cp/rtxqt27m/1/4.png" alt="Darigan Buzz" class="uc"><img src="http://pets.neopets.com/cp/m7koo2dh/1/4.png" alt="Darigan Grarrl" class="uc"><img src="http://pets.neopets.com/cp/lc996rfo/1/4.png" alt="Darigan Lupe" class="uc"><img src="http://pets.neopets.com/cp/jtojrgx4/1/4.png" alt="Darigan Skeith" class="uc"><img src="http://pets.neopets.com/cp/nmjqoog4/1/4.png" alt="Darigan Usul" class="uc"><img src="http://pets.neopets.com/cp/f7w354kd/1/4.png" alt="Darigan Zafara" class="bingo"><img src="http://pets.neopets.com/cp/qs3jgg5c/1/2.png" alt="Desert Aisha" class="uc"><img src="http://pets.neopets.com/cp/twz23cqt/1/4.png" alt="Faerie Kougra" class="bingo2"><img src="http://pets.neopets.com/cp/9jkjxxxz/1/4.png" alt="Faerie Kyrii" class="uc"><img src="http://pets.neopets.com/cp/z7vfgf8x/1/4.png" alt="Faerie Meerca" class="uc"><img src="http://pets.neopets.com/cp/qnod4bo7/1/4.png" alt="Faerie Moehog" class="uc"><img src="http://pets.neopets.com/cp/mv8co57q/1/4.png" alt="Grey Grundo" class="uc"><img src="http://pets.neopets.com/cp/ckxdj7o9/1/4.png" alt="Grey Jetsam" class="bingo"><img src="http://pets.neopets.com/cp/wbo2vrrz/1/4.png" alt="Grey Kau" class="uc"><img src="http://pets.neopets.com/cp/3d6kcbsg/1/4.png" alt="Grey Lupe" class="uc"><img src="http://pets.neopets.com/cp/wjhmoxl7/1/4.png" alt="Grey Meerca" class="uc"><img src="http://pets.neopets.com/cp/hstrck5d/1/4.png" alt="Grey Techo" class="uc"><img src="http://pets.neopets.com/cp/mtgdj48q/1/4.png" alt="Marshmallow Grundo" class="uc"><img src="http://pets.neopets.com/cp/7xmnfl2k/1/4.png" alt="Mutant Hissi" class="uc"><img src="http://pets.neopets.com/cp/b7ct8b9n/1/4.png" alt="Mutant Skeith" class="bingo2"><img src="http://pets.neopets.com/cp/22sbo3o9/1/4.png" alt="Robot Kacheek" class="uc"><img src="http://pets.neopets.com/cp/v529lb9x/1/4.png" alt="Sponge Kiko" class="uc"><img src="http://pets.neopets.com/cp/4w9888kt/1/4.png" alt="Sponge Koi" class="uc"><img src="http://pets.neopets.com/cp/g3qc7qlq/1/4.png" alt="Tyrannian Blumaroo" class="uc"><img src="http://pets.neopets.com/cp/bxor83tz/1/4.png" alt="Tyrannian Peophin" class="uc"><img src="http://pets.neopets.com/cp/otnsf5qd/1/4.png" alt="Tyrannian Skeith" class="uc"></center>
-<p>
-Baby Skeith ♛ <i>Darigan Acara</i> ♛ Darigan Buzz ♛ Darigan Grarrl ♛ Darigan Lupe ♛ Darigan Skeith ♛ Darigan Usul ♛ <i>Darigan Zafara</i> ♛ Desert Aisha ♛ <i>Faerie Kougra</i> ♛ Faerie Kyrii ♛ Faerie Meerca ♛ Faerie Moehog ♛ Grey Grundo ♛ <i>Grey Jetsam</i> ♛ Grey Kau ♛ Grey Lupe ♛ Grey Meerca ♛ Grey Techo ♛ Marshmallow Grundo ♛ Mutant Hissi ♛ <i>Mutant Skeith</i> ♛ Robot Kacheek ♛ Sponge Kiko ♛ Sponge Koi ♛ Tyrannian Blumaroo ♛ Tyrannian Peophin ♛ Tyrannian Skeith </p>
+<img src="http://pets.neopets.com/cp/md7bjrss/1/4.png" alt="Baby Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/8dng4bvh/1/4.png" alt="Blue Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/l9v8x25h/1/4.png" alt="Brown Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/rnhxzogx/1/4.png" alt="Burlap Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/mgflgmbw/1/4.png" alt="Camouflage Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/36qdj3tt/1/4.png" alt="Candy Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/7ozxo2rq/1/4.png" alt="Checkered Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/tjgllvn5/1/4.png" alt="Chocolate Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/hf5lhhjo/1/4.png" alt="Christmas Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/46rnq62m/1/4.png" alt="Clay Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/gfr2hcvb/1/4.png" alt="Cloud Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/3to7dnxs/1/4.png" alt="Custard Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/rdhwdnxj/1/4.png" alt="Darigan Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/3md49nh4/1/4.png" alt="Desert Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/rbojm4nw/1/4.png" alt="Dimensional Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/36mm4r3s/1/4.png" alt="Disco Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/9jjfmj6j/1/4.png" alt="Electric Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/dtc6wgs7/1/4.png" alt="Eventide Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/nxv7zgzx/1/4.png" alt="Faerie Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/62b8tkf7/1/4.png" alt="Fire Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/sgxqzhbq/1/4.png" alt="Ghost Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/vgobcz2j/1/4.png" alt="Glowing Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/f5qhxf4k/1/4.png" alt="Gold Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/xmqmg3m9/1/4.png" alt="Green Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/c6l7qqfq/1/4.png" alt="Grey Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/zz7qcs9n/1/4.png" alt="Halloween Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/s29xhgh6/1/4.png" alt="Ice Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/4837tz6c/1/4.png" alt="Invisible Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/ldhggmw7/1/4.png" alt="Island Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/7wk34ccl/1/4.png" alt="Jelly Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/dhsccf2q/1/4.png" alt="Magma Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/s57voxl4/1/4.png" alt="Maractite Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/82fzq4kh/1/4.png" alt="Maraquan Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/jcxf8fwx/1/4.png" alt="Mutant Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/b4jmckwr/1/4.png" alt="Orange Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/57krw69j/1/4.png" alt="Pastel Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/otwnltd9/1/4.png" alt="Pink Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/b2lrtdxr/1/4.png" alt="Pirate Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/tntghq2z/1/4.png" alt="Plushie Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/x3dx2jwv/1/4.png" alt="Polka Dot Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/okh6k2bb/1/4.png" alt="Purple Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/b5blxxh3/1/4.png" alt="Rainbow Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/j77lzlmx/1/4.png" alt="Red Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/t76lwg5f/1/4.png" alt="Relic Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/3dz2qmo5/1/4.png" alt="Robot Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/k2hb8r6v/1/4.png" alt="Royalboy Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/ofrz48to/1/4.png" alt="Royalgirl Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/oqj4v836/1/4.png" alt="Shadow Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/nsms52vb/1/4.png" alt="Silver Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/dhvcoqox/1/4.png" alt="Sketch Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/f8r7rw6s/1/4.png" alt="Skunk Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/hono94mo/1/4.png" alt="Snot Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/ckfhvrfc/1/4.png" alt="Snow Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/fmdz8llb/1/4.png" alt="Speckled Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/fbgtjdjf/1/4.png" alt="Split Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/hkct5fsc/1/4.png" alt="Sponge Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/72hvktc6/1/4.png" alt="Spotted Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/9fb4hrbg/1/4.png" alt="Starry Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/22hr4rb8/1/4.png" alt="Stealthy Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/2w3s9bwj/1/4.png" alt="Steampunk Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/vxhrrn6q/1/4.png" alt="Strawberry Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/tz72b74q/1/4.png" alt="Striped Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/ftnc4hlq/1/4.png" alt="Swamp Gas Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/xfboz835/1/4.png" alt="Toy Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/bkzr92rx/1/4.png" alt="Transparent Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/t2c7gogv/1/4.png" alt="Tyrannian Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/zc4269qg/1/4.png" alt="Water Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/4dd7ffrt/1/4.png" alt="White Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/cwzmrwo8/1/4.png" alt="Woodland Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/oltfrlqx/1/4.png" alt="Wraith Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/kfonqhdc/1/4.png" alt="Yellow Blumaroo" class="need">
+<img src="http://pets.neopets.com/cp/nzd7rvml/1/4.png" alt="Zombie Blumaroo" class="need">
+</center> 
 
-
-<br><h3>Tier 4</h3>
+<br>
+<h3>Bori</h3>
 <center>
-<img src="http://pets.neopets.com/cp/hlo2wzsf/1/4.png" alt="Darigan Blumaroo" class="uc"><img src="http://pets.neopets.com/cp/dfgcb2g5/1/4.png" alt="Darigan Bori " class="bingo"><img src="http://pets.neopets.com/cp/x9s9swjn/1/4.png" alt="Darigan Cybunny" class="uc"><img src="http://pets.neopets.com/cp/fl6gzz8m/1/4.png" alt="Darigan Eyrie" class="uc"><img src="http://pets.neopets.com/cp/rxo3dmfb/1/4.png" alt="Darigan Hissi" class="uc"><img src="http://pets.neopets.com/cp/mod76mxt/1/4.png" alt="Darigan Jubjub" class="uc"><img src="http://pets.neopets.com/cp/7wf78zjs/1/4.png" alt="Darigan Kau" class="uc"><img src="http://pets.neopets.com/cp/lqsn53lo/1/4.png" alt="Darigan Kougra" class="bingo2"><img src="http://pets.neopets.com/cp/tbs7k3oz/1/4.png" alt="Darigan Peophin" class="bingo"><img src="http://pets.neopets.com/cp/3ch57nrn/1/4.png" alt="Darigan Pteri" class="uc"><img src="http://pets.neopets.com/cp/5wgchjl9/1/4.png" alt="Darigan Scorchio" class="uc"><img src="http://pets.neopets.com/cp/qrc99mqd/1/4.png" alt="Darigan Techo " class="uc"><img src="http://pets.neopets.com/cp/nktmh9k9/1/4.png" alt="Faerie Blumaroo" class="uc"><img src="http://pets.neopets.com/cp/ncnfr33j/1/4.png" alt="Grey Chomby" class="uc"><img src="http://pets.neopets.com/cp/jtclcslk/1/4.png" alt="Grey Flotsam" class="bingo"><img src="http://pets.neopets.com/cp/vvxf5x4t/1/4.png" alt="Grey Grarrl" class="uc"><img src="http://pets.neopets.com/cp/dgxzlxmd/1/4.png" alt="Grey Jubjub" class="uc"><img src="http://pets.neopets.com/cp/xf7bk9ks/1/4.png" alt="Grey Moehog" class="uc"><img src="http://pets.neopets.com/cp/wrxtlss9/1/4.png" alt="Grey Mynci" class="uc"><img src="http://pets.neopets.com/cp/85jovktb/1/4.png" alt="Grey Poogle" class="uc"><img src="http://pets.neopets.com/cp/zg7dxxmg/1/4.png" alt="Grey Shoyru" class="uc"><img src="http://pets.neopets.com/cp/738gor5j/1/4.png" alt="Grey Uni" class="bingo"><img src="http://pets.neopets.com/cp/746q8sxb/1/4.png" alt="Halloween Moehog" class="uc"><img src="http://pets.neopets.com/cp/srhtw252/1/4.png" alt="Robot Pteri" class="uc"><img src="http://pets.neopets.com/cp/dm76wnhf/1/4.png" alt="Tyrannian Bori" class="uc"><img src="http://pets.neopets.com/cp/cjjs7bf5/1/4.png" alt="Usukiboy Usul" class="uc"></center>
+66
+</center> 
 
-<p>Darigan Blumaroo ♛ <i>Darigan Bori</i> ♛ Darigan Cybunny ♛ Darigan Eyrie ♛ Darigan Hissi ♛ Darigan Jubjub ♛ Darigan Kau ♛ <i>Darigan Kougra</i> ♛ <i>Darigan Peophin</i> ♛ Darigan Pteri ♛ Darigan Scorchio ♛ Darigan Techo ♛ Faerie Blumaroo ♛ Grey Chomby ♛ <i>Grey Flotsam</i> ♛ Grey Grarrl ♛ Grey Jubjub ♛ Grey Moehog ♛ Grey Mynci ♛ Grey Poogle ♛ Grey Shoyru ♛ <i>Grey Uni</i> ♛ Halloween Moehog ♛ Robot Pteri ♛  Tyrannian Bori ♛ Usukiboy Usul 
-</p>
-
-
-
-<br><h3>Tier 5</h3>
-
-
+<br>
+<h3>Bruce</h3>
 <center>
-<img src="http://pets.neopets.com/cp/t2w9kscd/1/4.png" alt="Darigan Bruce" class="uc"><img src="http://pets.neopets.com/cp/xo7rjd9l/1/4.png" alt="Darigan Kyrii" class="uc"><img src="http://pets.neopets.com/cp/mwr696qb/1/4.png" alt="Darigan Yurble" class="uc"><img src="http://pets.neopets.com/cp/odbvoqrw/1/4.png" alt="Faerie Aisha" class="bingo2"><img src="http://pets.neopets.com/cp/4ohsmf6o/1/4.png" alt="Faerie Ixi" class="bingo2"><img src="http://pets.neopets.com/cp/d5l4g6z5/1/4.png" alt="Faerie Lenny" class="bingo"><img src="http://pets.neopets.com/cp/qgwhn7qk/1/4.png" alt="Faerie Pteri" class="uc"><img src="http://pets.neopets.com/cp/jhnrn2s5/1/4.png" alt="Faerie Shoyru" class="uc"><img src="http://pets.neopets.com/cp/qfzgbmnt/1/4.png" alt="Faerie Peophin" class="bingo"><img src="http://pets.neopets.com/cp/5fcfhmn9/1/4.png" alt="Faerie Ruki" class="uc"><img src="http://pets.neopets.com/cp/ccjnj9bt/1/4.png" alt="Grey Cybunny" class="uc"><img src="http://pets.neopets.com/cp/fv6gn9jj/1/4.png" alt="Grey Eyrie" class="bingo"><img src="http://pets.neopets.com/cp/glqwhf65/1/4.png" alt="Grey Gelert" class="uc"><img src="http://pets.neopets.com/cp/ljfw3br9/1/4.png" alt="Grey Kacheek" class="uc"><img src="http://pets.neopets.com/cp/dzmfdrbs/1/4.png" alt=" Grey Kougra" class="bingo"><img src="http://pets.neopets.com/cp/23mfvcqz/1/4.png" alt="Grey Kyrii" class="uc"><img src="http://pets.neopets.com/cp/68zllrbv/1/4.png" alt="Grey Peophin" class="uc"><img src="http://pets.neopets.com/cp/kh2ombsx/1/4.png" alt="Grey Pteri" class="uc"><img src="http://pets.neopets.com/cp/ro2ojo23/1/4.png" alt="Grey Scorchio" class="uc"><img src="http://pets.neopets.com/cp/z32fwjcc/1/4.png" alt=" Grey Tonu" class="uc"><img src="http://pets.neopets.com/cp/skblt8gb/1/4.png" alt="Grey Skeith" class="uc"><img src="http://pets.neopets.com/cp/c2lmrmjw/1/4.png" alt="Grey Wocky" class="uc"><img src="http://pets.neopets.com/cp/2nngvgnj/1/4.png" alt="Grey Yurble" class="uc"><img src="http://pets.neopets.com/cp/sdosmm68/1/4.png" alt="Grey Zafara" class="uc"><img src="http://pets.neopets.com/cp/j6f879ht/1/4.png" alt="Ice Bruce" class="uc"><img src="http://pets.neopets.com/cp/f4vgqr2n/1/4.png" alt="Maraquan Gelert" class="bingo"><img src="http://pets.neopets.com/cp/j4nzfstx/1/4.png" alt="Maraquan Hissi" class="uc"><img src="http://pets.neopets.com/cp/6qw32lzn/1/4.png" alt="Maraquan Kau" class="uc"><img src="http://pets.neopets.com/cp/x5lx82nh/1/4.png" alt="Maraquan Skeith" class="uc"><img src="http://pets.neopets.com/cp/n9gjg55k/1/4.png" alt="Plushie Bruce" class="uc"><img src="http://pets.neopets.com/cp/mdzmhklq/1/4.png" alt="Plushie Buzz" class="uc"><img src="http://pets.neopets.com/cp/fmwmrwgr/1/4.png" alt="Plushie Flotsam" class="uc"><img src="http://pets.neopets.com/cp/q2srtm7x/1/4.png" alt="Sponge Blumaroo" class="uc"><img src="http://pets.neopets.com/cp/9wtjdgq6/1/4.png" alt="Sponge Lupe" class="uc"><img src="http://pets.neopets.com/cp/m7wmc6zr/1/4.png" alt=" Usukigirl Usul" class="uc"></center>
-<p>
-Darigan Bruce ♛ Darigan Kyrii ♛ Darigan Yurble ♛ <i>Faerie Aisha</i> ♛ <i>Faerie Ixi</i> ♛ <i>Faerie Lenny</i> ♛ Faerie Pteri ♛ Faerie Shoyru ♛ <i>Faerie Peophin</i> ♛ Faerie Ruki ♛ Grey Cybunny ♛ <i>Grey Eyrie</i> ♛ Grey Gelert ♛ Grey Kacheek ♛ <i>Grey Kougra</i> ♛ Grey Kyrii ♛ Grey Peophin ♛ Grey Pteri ♛ Grey Scorchio ♛ Grey Tonu ♛ Grey Skeith ♛ Grey Wocky ♛ Grey Yurble ♛ Grey Zafara ♛ Ice Bruce ♛ <i>Maraquan Gelert</i> ♛ Maraquan Hissi ♛ Maraquan Kau ♛ Maraquan Skeith ♛ Plushie Bruce ♛ Plushie Buzz ♛ Plushie Flotsam ♛ Sponge Blumaroo ♛ Sponge Lupe ♛ Usukigirl Usul
-</p>
+65
+</center> 
 
-
-<br><h3>Tier 6</h3>
+<br>
+<h3>Buzz</h3>
 <center>
-<img src="http://pets.neopets.com/cp/4bothxo5/1/4.png" alt=" Darigan Aisha" class="uc"><img src="http://pets.neopets.com/cp/nhgnttlg/1/4.png" alt="Darigan Gelert" class="uc"><img src="http://pets.neopets.com/cp/h3cn8zlv/1/4.png" alt=" Darigan Ixi" class="uc"><img src="http://pets.neopets.com/cp/kdxm92vc/1/4.png" alt=" Darigan Korbat" class="uc"><img src="http://pets.neopets.com/cp/m9s8kcss/1/4.png" alt=" Faerie Wocky" class="bingo"><img src="http://pets.neopets.com/cp/j8fzwos6/1/4.png" alt=" Faerie Xweetok" class="uc"><img src="http://pets.neopets.com/cp/sd4xm2t8/1/4.png" alt=" Faerie Yurble " class="uc"><img src="http://pets.neopets.com/cp/lv5wf9hc/1/4.png" alt="Grey Acara" class="uc"><img src="http://pets.neopets.com/cp/sh83j66v/1/4.png" alt="Grey Aisha" class="uc"><img src="http://pets.neopets.com/cp/s4bjdrmx/1/4.png" alt=" Grey Ixi" class="bingo"><img src="http://pets.neopets.com/cp/ot9l6j5s/1/4.png" alt="Grey Korbat" class="uc"><img src="http://pets.neopets.com/cp/zrbmq335/1/4.png" alt=" MSP Poogle" class="uc"><img src="http://pets.neopets.com/cp/wr42jlsl/1/4.png" alt=" Plushie Chomby" class="uc"><img src="http://pets.neopets.com/cp/836ng3o4/1/4.png" alt=" Plushie Grundo" class="uc"><img src="http://pets.neopets.com/cp/9r2r58xv/1/4.png" alt=" Plushie Kiko" class="uc"><img src="http://pets.neopets.com/cp/rv27gt57/1/4.png" alt=" Robot Ixi" class="uc"><img src="http://pets.neopets.com/cp/ll5oo3bv/1/4.png" alt=" Sponge Peophin" class="uc"><img src="http://pets.neopets.com/cp/koq3w6sc/1/4.png" alt=" Tyrannian Ixi" class="uc"></center> 
-	<p> 
-	Darigan Aisha ♛ Darigan Gelert ♛ Darigan Ixi ♛ Darigan Korbat ♛ <i>Faerie Wocky</i> ♛ Faerie Xweetok ♛ Faerie Yurble ♛ Grey Acara ♛ Grey Aisha ♛ <i>Grey Ixi</i> ♛ Grey Korbat ♛ MSP Poogle ♛ Plushie Chomby ♛ Plushie Grundo ♛ Plushie Kiko ♛ Robot Ixi ♛ Sponge Peophin ♛ Tyrannian Ixi</p>
+64
+</center> 
 
-
-<br><h3>Tier 7</h3>
-
-
+<br>
+<h3>Chia</h3>
 <center>
-<img src="http://pets.neopets.com/cp/kcwbf7vo/1/4.png" alt=" Darigan Kacheek" class="uc"><img src="http://pets.neopets.com/cp/7v2rjsn8/1/4.png" alt=" Faerie Tonu" class="uc"><img src="http://pets.neopets.com/cp/ffwb25nh/1/4.png" alt=" Faerie Tuskaninny" class="uc"><img src="http://pets.neopets.com/cp/kxwr5jdr/1/4.png" alt=" Grey Usul" class="uc"><img src="http://pets.neopets.com/cp/6jwtmd9l/1/4.png" alt=" Plushie Jetsam" class="uc"><img src="http://pets.neopets.com/cp/mvbzbm5w/1/4.png" alt=" Plushie Kacheek" class="uc"><img src="http://pets.neopets.com/cp/lqoqh29x/1/4.png" alt=" Plushie Mynci" class="uc"><img src="http://pets.neopets.com/cp/grl93xj4/1/4.png" alt=" Plushie Shoyru" class="uc"><img src="http://pets.neopets.com/cp/63owhoht/1/4.png" alt=" Plushie Zafara" class="uc"><img src="http://pets.neopets.com/cp/mhgfs24t/1/4.png" alt=" Quigukiboy Quiggle" class="uc"><img src="http://pets.neopets.com/cp/j3dj7jtz/1/4.png" alt=" Quigukigirl Quiggle" class="uc"><img src="http://pets.neopets.com/cp/twgzxgff/1/4.png" alt=" Royalgirl Mynci" class="uc"><img src="http://pets.neopets.com/cp/cf625b34/1/4.png" alt=" Sponge Aisha" class="uc"><img src="http://pets.neopets.com/cp/v6wsmfgh/1/4.png" alt=" Tyrannian Draik" class="uc"><img src="http://pets.neopets.com/cp/s64kfm2g/1/4.png" alt=" Tyrannian Krawk" class="bingo2"></center>
+85
+</center> 
 
-<p>Darigan Kacheek ♛ Faerie Tonu ♛ Faerie Tuskaninny ♛ Grey Usul ♛ Plushie Jetsam ♛ Plushie Kacheek ♛ Plushie Mynci ♛ Plushie Shoyru ♛ Plushie Zafara ♛ Quigukiboy Quiggle ♛ Quigukigirl Quiggle ♛ Royalgirl Mynci ♛ Sponge Aisha ♛ Tyrannian Draik ♛ <i>Tyrannian Krawk</i></p>
-
-
-<br><h3>Tier 8</h3>
-
-
+<br>
+<h3>Chomby</h3>
 <center>
-<img src="http://pets.neopets.com/cp/99qb5nr4/1/4.png" alt=" Darigan Krawk" class="uc"><img src="http://pets.neopets.com/cp/gcg4x88j/1/4.png" alt=" Faerie Grarrl" class="bingo"><img src="http://pets.neopets.com/cp/3o592hvv/1/4.png" alt=" Grey Krawk" class="uc"><img src="http://pets.neopets.com/cp/jj2s8x23/1/4.png" alt=" Maraquan Krawk" class="uc"><img src="http://pets.neopets.com/cp/4nx373n2/1/4.png" alt=" Plushie Acara" class="uc"><img src="http://pets.neopets.com/cp/klk8gxx5/1/4.png" alt=" Plushie Cybunny" class="uc"><img src="http://pets.neopets.com/cp/m82nc33j/1/4.png" alt=" Plushie Eyrie" class="uc"><img src="http://pets.neopets.com/cp/rs8q6tkc/1/4.png" alt=" Plushie Kau" class="uc"><img src="http://pets.neopets.com/cp/7b3xt8t5/1/4.png" alt=" Plushie Koi" class="uc"><img src="http://pets.neopets.com/cp/4jn3fd4q/1/4.png" alt=" Plushie Kougra" class="bingo"><img src="http://pets.neopets.com/cp/xzvs34d5/1/4.png" alt=" Plushie Meerca" class="uc"><img src="http://pets.neopets.com/cp/6nm3vz6l/1/4.png" alt=" Plushie Poogle" class="uc"><img src="http://pets.neopets.com/cp/txo5notj/1/4.png" alt=" Plushie Pteri" class="uc"><img src="http://pets.neopets.com/cp/gbh3q4cr/1/4.png" alt=" Plushie Scorchio" class="uc"><img src="http://pets.neopets.com/cp/nmj8qqsv/1/4.png" alt=" Plushie Skeith" class="uc"><img src="http://pets.neopets.com/cp/s539zonz/1/4.png" alt=" Plushie Techo" class="uc"><img src="http://pets.neopets.com/cp/qx5b9ogj/1/4.png" alt=" Plushie Tonu" class="uc"><img src="http://pets.neopets.com/cp/2r9ndobr/1/4.png" alt=" Plushie Tuskaninny" class="uc"><img src="http://pets.neopets.com/cp/5wwovf5m/1/4.png" alt=" Royalboy Kougra" class="uc"><img src="http://pets.neopets.com/cp/ox5bj94w/1/4.png" alt=" Royalgirl Kougra" class="uc"><img src="http://pets.neopets.com/cp/nhbo6hwd/1/4.png" alt=" Royalboy Mynci" class="uc"></center>
+69
+</center> 
 
-<p>Darigan Krawk ♛ <i>Faerie Grarrl</i> ♛ Grey Krawk ♛ Maraquan Krawk ♛ Plushie Acara ♛ Plushie Cybunny ♛ Plushie Eyrie ♛ Plushie Kau ♛ Plushie Koi ♛ <i>Plushie Kougra</i> ♛ Plushie Meerca ♛ Plushie Poogle ♛ Plushie Pteri ♛ Plushie Scorchio ♛ Plushie Skeith ♛ Plushie Techo ♛ Plushie Tonu ♛ Plushie Tuskaninny ♛ Royalboy Kougra ♛ Royalgirl Kougra ♛ Royalboy Mynci</p>
-
-
-<br><h3>Tier 9</h3>
-
+<br>
+<h3>Cybunny</h3>
 <center>
-<img src="http://pets.neopets.com/cp/gggnvtk9/1/4.png" alt=" Darigan Draik" class="uc"><img src="http://pets.neopets.com/cp/7mfnbx6m/1/4.png" alt=" Faerie Draik" class="uc"><img src="http://pets.neopets.com/cp/2xcodrtr/1/4.png" alt=" Faerie Techo" class="uc"><img src="http://pets.neopets.com/cp/fz97w2jv/1/4.png" alt=" Plushie Aisha" class="uc"><img src="http://pets.neopets.com/cp/nxlwzvjq/1/4.png" alt=" Plushie Blumaroo" class="uc"><img src="http://pets.neopets.com/cp/qmc4fv6h/1/4.png" alt=" Plushie Bori" class="uc"><img src="http://pets.neopets.com/cp/fzlcchgq/1/4.png" alt=" Plushie Chia" class="uc"><img src="http://pets.neopets.com/cp/n6fmwkm4/1/4.png" alt=" Plushie Draik" class="uc"><img src="http://pets.neopets.com/cp/88bv8htb/1/4.png" alt=" Plushie Elephante" class="uc"><img src="http://pets.neopets.com/cp/ksm7sw22/1/4.png" alt=" Plushie Gelert" class="uc"><img src="http://pets.neopets.com/cp/jf9knkxg/1/4.png" alt=" Plushie Grarrl" class="uc"><img src="http://pets.neopets.com/cp/njdfzgf7/1/4.png" alt=" Plushie Hissi" class="uc"><img src="http://pets.neopets.com/cp/qqb4ck96/1/4.png" alt=" Plushie Ixi" class="uc"><img src="http://pets.neopets.com/cp/sblvljqn/1/4.png" alt=" Plushie Jubjub" class="uc"><img src="http://pets.neopets.com/cp/mnmfojoj/1/4.png" alt=" Plushie Korbat" class="uc"><img src="http://pets.neopets.com/cp/xmh5w9b8/1/4.png" alt=" Plushie Krawk" class="uc"><img src="http://pets.neopets.com/cp/4dx8vm5l/1/4.png" alt=" Plushie Lenny" class="uc"><img src="http://pets.neopets.com/cp/jwqw9b3r/1/4.png" alt=" Plushie Lupe" class="uc"><img src="http://pets.neopets.com/cp/zqj77c7m/1/4.png" alt=" Plushie Quiggle" class="uc"><img src="http://pets.neopets.com/cp/tx5h4vo4/1/4.png" alt=" Plushie Uni" class="uc"><img src="http://pets.neopets.com/cp/o45oq3os/1/4.png" alt=" Plushie Wocky" class="uc"><img src="http://pets.neopets.com/cp/2bmgolnm/1/4.png" alt=" Plushie Yurble" class="uc"><img src="http://pets.neopets.com/cp/xs6m76g2/1/4.png" alt=" Royalboy Acara" class="uc"><img src="http://pets.neopets.com/cp/f4nvbnvz/1/4.png" alt=" Royalgirl Aisha" class="uc"><img src="http://pets.neopets.com/cp/c7hlrd9x/1/4.png" alt=" Royalboy Cybunny" class="uc"><img src="http://pets.neopets.com/cp/w6kl48vj/1/4.png" alt=" Royalgirl Cybunny" class="uc"><img src="http://pets.neopets.com/cp/t6n8zszk/1/4.png" alt=" Royalboy Draik" class="uc"><img src="http://pets.neopets.com/cp/6rkmvkck/1/4.png" alt=" Royalgirl Draik" class="uc"><img src="http://pets.neopets.com/cp/jtjftmfh/1/4.png" alt=" Royalboy Korbat" class="uc"><img src="http://pets.neopets.com/cp/jj76jvt4/1/4.png" alt=" Royalgirl Korbat" class="uc"><img src="http://pets.neopets.com/cp/z4dbg8j4/1/4.png" alt=" Royalgirl Lupe" class="uc"><img src="http://pets.neopets.com/cp/wgh6n4fz/1/4.png" alt=" Royalboy Shoyru" class="uc"><img src="http://pets.neopets.com/cp/8328oh27/1/4.png" alt=" Royalgirl Shoyru" class="uc"></center>
+72
+</center> 
 
-
-<p>Darigan Draik ♛ Faerie Draik ♛ Faerie Techo ♛ Plushie Aisha ♛ Plushie Blumaroo ♛ Plushie Bori ♛ Plushie Chia ♛ Plushie Draik ♛ Plushie Elephante ♛ Plushie Gelert ♛ Plushie Grarrl ♛ Plushie Hissi ♛ Plushie Ixi ♛ Plushie Jubjub ♛ Plushie Korbat ♛ Plushie Krawk ♛ Plushie Lenny ♛ Plushie Lupe ♛ Plushie Quiggle ♛ Plushie Uni ♛ Plushie Wocky ♛ Plushie Yurble ♛ Royalboy Acara ♛ Royalgirl Aisha ♛ Royalboy Cybunny ♛ Royalgirl Cybunny ♛ Royalboy Draik ♛ Royalgirl Draik ♛ Royalboy Korbat ♛ Royalgirl Korbat ♛ Royalgirl Lupe ♛ Royalboy Shoyru ♛ Royalgirl Shoyru</p>
-
-
-<br><h3>Tier 10</h3>
-
-
+<br>
+<h3>Draik</h3>
 <center>
-<img src="http://pets.neopets.com/cp/kg8f5g9g/1/4.png" alt=" Darigan Wocky" class="uc"><img src="http://pets.neopets.com/cp/56m95z6l/1/4.png" alt=" Plushie Gnorbu" class="uc"><img src="http://pets.neopets.com/cp/k6jo642v/1/4.png" alt=" Plushie Kyrii" class="uc"><img src="http://pets.neopets.com/cp/tb47vx43/1/4.png" alt=" Plushie Moehog" class="uc"><img src="http://pets.neopets.com/cp/5th9m7vw/1/4.png" alt=" Plushie Nimmo" class="uc"><img src="http://pets.neopets.com/cp/f37swkvg/1/4.png" alt=" Plushie Peophin" class="uc"><img src="http://pets.neopets.com/cp/6d3ffksh/1/4.png" alt=" Plushie Usul" class="uc"><img src="http://pets.neopets.com/cp/nqvgnqh7/1/4.png" alt=" Royalgirl Grarrl" class="uc"><img src="http://pets.neopets.com/cp/jl45469d/1/4.png" alt=" Royalboy Kau" class="uc"><img src="http://pets.neopets.com/cp/4jo558f9/1/4.png" alt=" Royalgirl Kau" class="uc"><img src="http://pets.neopets.com/cp/l4bz3nxf/1/4.png" alt=" Royalboy Kyrii" class="uc"><img src="http://pets.neopets.com/cp/hqb6slqw/1/4.png" alt=" Royalgirl Kyrii" class="uc"></center>
+70
+</center> 
 
-<p>Darigan Wocky ♛ Plushie Gnorbu ♛ Plushie Kyrii ♛ Plushie Moehog ♛ Plushie Nimmo ♛ Plushie Peophin ♛ Plushie Usul ♛ Royalgirl Grarrl ♛ Royalboy Kau ♛ Royalgirl Kau ♛ Royalboy Kyrii ♛ Royalgirl Kyrii</p>
+<br>
+<h3>Elephante</h3>
+<center>
+64
+</center> 
 
-<br><a href="http://neopets.com/~Danpo">Danpo</a> used for tiers (updated Mar 2022).
-<br><br><div id="credit"><b>Layout by <a href="/~Tines">Silent Serenity</a>  |  Coding created by <a href="/userlookup.phtml?user=olivia_avenue">Olivia</a>, edited by <a href="/userlookup.phtml?user=srhale">Daniel</a>  |  Get your own coding at <a href="/~Vieryka">Vieryka</a></b></div>
+<br>
+<h3>Eyrie</h3>
+<center>
+65
+</center> 
+
+<br>
+<h3>Flotsam</h3>
+<center>
+64
+</center> 
+
+<br>
+<h3>Gelert</h3>
+<center>
+69
+</center> 
+
+<br>
+<h3>Gnorbu</h3>
+<center>
+55
+</center> 
+
+<br>
+<h3>Grarrl</h3>
+<center>
+71
+</center> 
+
+<br>
+<h3>Grundo</h3>
+<center>
+70
+</center> 
+
+<br>
+<h3>Hissi</h3>
+<center>
+62
+</center> 
+
+<br>
+<h3>Ixi</h3>
+<center>
+68
+</center> 
+
+<br>
+<h3>Jetsam</h3>
+<center>
+68
+</center> 
+
+<br>
+<h3>JubJub</h3>
+<center>
+69
+</center> 
+
+<br>
+<h3>Kacheek</h3>
+<center>
+66
+</center> 
+
+<br>
+<h3>Kau</h3>
+<center>
+67
+</center> 
+
+<br>
+<h3>Kiko</h3>
+<center>
+67
+</center> 
+
+<br>
+<h3>Koi</h3>
+<center>
+67
+</center> 
+
+<br>
+<h3>Korbat</h3>
+<center>
+63
+</center> 
+
+<br>
+<h3>Kougra</h3>
+<center>
+73
+</center> 
+
+<br>
+<h3>Krawk</h3>
+<center>
+64
+</center> 
+
+<br>
+<h3>Kyrii</h3>
+<center>
+67
+</center> 
+
+<br>
+<h3>Lenny</h3>
+<center>
+68
+</center> 
+
+<br>
+<h3>Lupe</h3>
+<center>
+69
+</center> 
+
+<br>
+<h3>Lutari</h3>
+<center>
+52
+</center> 
+
+<br>
+<h3>Meerca</h3>
+<center>
+67
+</center> 
+
+<br>
+<h3>Moehog</h3>
+<center>
+67
+</center> 
+
+<br>
+<h3>Mynci</h3>
+<center>
+72
+</center> 
+
+<br>
+<h3>Nimmo</h3>
+<center>
+62
+</center> 
+
+<br>
+<h3>Ogrin</h3>
+<center>
+56
+</center> 
+
+<br>
+<h3>Peophin</h3>
+<center>
+64
+</center> 
+
+<br>
+<h3>Poogle</h3>
+<center>
+68
+</center> 
+
+<br>
+<h3>Pteri</h3>
+<center>
+67
+</center> 
+
+<br>
+<h3>Quiggle</h3>
+<center>
+68
+</center> 
+
+<br>
+<h3>Ruki</h3>
+<center>
+59
+</center> 
+
+<br>
+<h3>Scorchio</h3>
+<center>
+65
+</center> 
+
+<br>
+<h3>Shoyru</h3>
+<center>
+74
+</center> 
+
+<br>
+<h3>Skeith</h3>
+<center>
+66
+</center> 
+
+<br>
+<h3>Techo</h3>
+<center>
+68
+</center> 
+
+<br>
+<h3>Tonu</h3>
+<center>
+68
+</center> 
+
+<br>
+<h3>Tuskaninny</h3>
+<center>
+60
+</center> 
+
+<br>
+<h3>Uni</h3>
+<center>
+72
+</center> 
+
+<br>
+<h3>Usul</h3>
+<center>
+71
+</center> 
+
+<br>
+<h3>Vandagyre</h3>
+<center>
+25
+</center> 
+
+<br>
+<h3>Wocky</h3>
+<center>
+66
+</center> 
+
+<br>
+<h3>Xweetok</h3>
+<center>
+61
+</center> 
+
+<br>
+<h3>Yurble</h3>
+<center>
+67
+</center> 
+
+<br>
+<h3>Zafara</h3>
+<center>
+72
+</center> 
+
+<br>
+<div class="footer"><b>Coding by <a href="/userlookup.phtml?user=srhale">Daniel</a>  |  Get your own coding at <a href="/~Rejii">Rejii</a>  |  Layout Inspired by <a href="/~Vieryka">Vieryka's</a> UC Bingo</b></div>
 
 </center></div></center>
